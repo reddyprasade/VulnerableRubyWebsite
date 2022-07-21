@@ -1,0 +1,42 @@
+stages:
+  - code
+  - build
+  - testing
+  - deploy
+  - boman
+
+image: docker:latest
+
+services:
+- docker:dind
+
+# coding:
+#   stage: code
+#   script: echo 'codje stage'
+
+# budiling:
+#   stage: build
+#   script: echo 'budild stage'  
+
+# testing:
+#   stage: test
+#   script: echo 'test stage'  
+
+boman-ai:
+  stage: boman
+  script:
+    - apk add --no-cache python3 py3-pip
+    - python3 -m pip install boman-cli --upgrade
+    - boman-cli -a run
+  #allow_failure: true
+
+
+# deploying:
+#   stage: deploy
+#   script: echo 'This is a deploy stage'  
+
+
+
+
+
+
