@@ -7,7 +7,7 @@ SAST:
 
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
-  URL: "http://demo.testfire.net" 
+  #URL: "http://demo.testfire.net" 
 
 Secret_Scan: True
    
