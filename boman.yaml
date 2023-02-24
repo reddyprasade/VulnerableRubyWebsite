@@ -1,9 +1,9 @@
 Auth:
-  project_token: "21e18676-1aff-4121-909f-77878c121aa5"
-  customer_token:  "1f3dc7b3-cb4e-4eb9-b5ee-c780947f12e3"
-
+  project_token: "91f33b20-b2db-4ad1-a71c-c6b202880ef0"  #"21e18676-1aff-4121-909f-77878c121aa5"
+  #customer_token: ""d8a90f5c-b4ed-40ea-a83d-7a4bcb103bc0""  #"1f3dc7b3-cb4e-4eb9-b5ee-c780947f12e3"
+  
 SAST:
- language: "ruby" 
+ language: "ruby","java-snyk-sast"
 
 DAST:
  type: "WEB" ## API, dWEB, WEB-ADV
